@@ -1,0 +1,17 @@
+<!-- @format -->
+
+<button
+  [type]="type"
+  [class]="'button text-body-14' + ' ' + customTypographyClass"
+  [ngClass]="{
+    'button--inline': appearance === 'inline',
+    'button--outline': appearance === 'outline',
+    'button--grey': color === 'grey',
+  }"
+  [style.background-color]="backgroundColor"
+  [disabled]="disabled"
+>
+  <ng-container>
+    <ng-content></ng-content>
+  </ng-container>
+</button>

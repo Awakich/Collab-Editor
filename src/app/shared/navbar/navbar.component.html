@@ -1,0 +1,24 @@
+<nav class="navigation">
+  <div class="navigation__logo" routerLink="/">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example bookmark icon"
+      fontIcon="bookmark"
+    ></mat-icon>
+    <h2 class="text-heading-2">Taskometrika</h2>
+  </div>
+
+  <ul class="navigation__tabs">
+    <li class="navigation__tab">
+      <a routerLink="/skills">Викторины</a>
+    </li>
+    <li class="navigation__tab">
+      <a routerLink="/tasks">Задачи</a>
+    </li>
+  </ul>
+
+  <div class="navigation__buttons">
+    <app-button [appearance]="'outline'">Регистрация</app-button>
+    <app-button>Войти</app-button>
+  </div>
+</nav>

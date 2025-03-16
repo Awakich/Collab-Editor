@@ -1,0 +1,14 @@
+.error {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+  &__title {
+    color: var(--dark-grey);
+    text-align: center;
+  }
+}

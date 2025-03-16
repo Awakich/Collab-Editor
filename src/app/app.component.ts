@@ -1,12 +1,13 @@
 import { Component, inject, OnDestroy, OnInit, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProjectService } from './projects.service';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from "./shared/navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, NavbarComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -14,7 +15,7 @@ export class AppComponent implements OnInit, OnDestroy {
   private projectService = inject(ProjectService);
   subscriptions: Subscription[] = [];
 
-  projects = signal<any[]>([])
+  projects = signal<any[]>([]);
 
   ngOnInit(): void {
     const projectsSub$ = this.projectService.getProjects().subscribe(r => {

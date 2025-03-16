@@ -1,0 +1,14 @@
+.page {
+  position: relative;
+  height: 100vh;
+  background-color: var(--white);
+
+  &__header {
+    display: flex;
+    padding: 20px 10%;
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
