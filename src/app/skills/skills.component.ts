@@ -1,11 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { TagComponent } from '../shared/tag/tag.component';
-import { ButtonComponent } from '../shared/button/button.component';
+import { SkillComponent } from './shared/skill/skill.component';
 
 @Component({
   selector: 'app-skills',
-  imports: [CommonModule, TagComponent, ButtonComponent],
+  imports: [CommonModule, SkillComponent],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -17,6 +16,6 @@ export class SkillsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-      
+
   }
 }

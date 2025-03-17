@@ -1,0 +1,40 @@
+.skill-detail {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  border: 1px solid var(--dark-grey);
+  border-radius: 8px;
+  padding: 20px;
+
+  &__questions {
+    margin-top: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .questions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .question {
+    margin-bottom: 10px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 8px;
+    padding: 10px 0 10px 10px;
+
+    &__label {
+      margin-left: 10px;
+    }
+  }
+
+  .input {
+    accent-color: var(--black);
+  }
+}

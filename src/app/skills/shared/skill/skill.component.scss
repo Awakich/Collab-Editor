@@ -1,0 +1,32 @@
+.skill {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--dark-grey);
+
+  p,
+  h4 {
+    align-self: first baseline;
+  }
+
+  &__description {
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 240px;
+    background: var(--dark-grey);
+    margin-bottom: 10px;
+  }
+
+  app-button {
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+  }
+}

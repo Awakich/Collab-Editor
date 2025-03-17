@@ -1,0 +1,24 @@
+<div class="skill-detail">
+  <h2 class="text-heading-2">Развитие чакры</h2>
+  <p class="text-body-12">Вопрос 1 из 5</p>
+
+  <div class="skill-detail__questions">
+    <h3 class="text-heading-3">Для чего чакра?</h3>
+
+    <div class="questions">
+      @for (question of questions(5); track $index) {
+      <div class="question">
+        <input id="question" type="radio" class="input" />
+        <label for="question" class="text-body-14 question__label"
+          >Для себя</label
+        >
+      </div>
+      }
+    </div>
+
+    <div class="skill-detail__buttons">
+      <app-button [appearance]="'outline'">Назад</app-button>
+      <app-button>Вперед</app-button>
+    </div>
+  </div>
+</div>
