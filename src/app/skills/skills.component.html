@@ -1,1 +1,28 @@
-<p>skills works!</p>
+<div class="skills">
+  <h2 class="text-heading-2">Викторины</h2>
+
+  <p class="text-body-14 skills__description">
+    Соревнуйтесь с интерактивными викторинами и отслеживайте свой прогресс
+  </p>
+
+  <h3 class="text-heading-3">Доступные навыки</h3>
+  
+  <div class="skills__list">
+    @for (skill of skills(5); track $index) {
+    <div class="skill">
+      <div class="skill__image"></div>
+
+      <h4 class="text-heading-4">Развитие чакры</h4>
+      <p class="text-body-12 skill__description">Описание для навыка</p>
+
+      <p class="text-body-14">Кол-во уровней: 5</p>
+
+      @if (1 !== 1) {
+      <app-tag type="completed">Выполнен</app-tag>
+      } @else {
+      <app-button>Начать</app-button>
+      }
+    </div>
+    }
+  </div>
+</div>

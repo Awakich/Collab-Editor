@@ -1,0 +1,15 @@
+.tag {
+  border-radius: 15px;
+  padding: 5px 45px;
+  display: inline;
+
+  &--completed {
+    color: var(--green);
+    border: 1px solid var(--green);
+  }
+
+  &--uncompleted {
+    color: var(--red);
+    border: 1px solid var(--red);
+  }
+}

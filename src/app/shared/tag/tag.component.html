@@ -1,0 +1,11 @@
+<div
+  [class]="'tag text-body-14' + ' ' + customTypographyClass"
+  [ngClass]="{
+    'tag--completed': type === 'completed',
+    'tag--uncompleted': type === 'uncompleted',
+  }"
+>
+  <ng-container>
+    <ng-content></ng-content>
+  </ng-container>
+</div>
