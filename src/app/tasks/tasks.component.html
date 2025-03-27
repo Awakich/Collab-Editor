@@ -1,1 +1,158 @@
-<p>tasks works!</p>
+<div class="tasks">
+  <h2 class="text-heading-2">Задачи</h2>
+
+  <p class="text-body-14 tasks__description">
+    Организуйте свои задачи и сотрудничайте с командой.
+  </p>
+
+  <div class="tasks__init">
+    <input type="text" placeholder="Поиск задачи" />
+
+    <div class="tasks__filter">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example menu icon"
+        fontIcon="menu"
+      ></mat-icon>
+    </div>
+
+    <app-button>Добавить задачу</app-button>
+  </div>
+
+  <div class="tasks__list">
+    <div class="tasks__row todo">
+      <div class="tasks__title">
+        <div class="tasks__format">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example error icon"
+            fontIcon="error"
+          ></mat-icon>
+
+          <h4 class="text-body-18">Планируемое</h4>
+        </div>
+
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example add icon"
+          fontIcon="add"
+        ></mat-icon>
+      </div>
+
+      @for(task of tasks(2); track $index) {
+      <div class="task">
+        <div class="task__top">
+          <img alt="avatar" />
+
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example menu icon"
+            fontIcon="menu"
+          ></mat-icon>
+
+          <!-- <mat-icon
+            aria-hidden="false"
+            aria-label="Example menu icon"
+            fontIcon="close"
+          ></mat-icon> -->
+        </div>
+
+        <p class="text-body-16">Название</p>
+        <p class="text-body-12 task__description">Описание</p>
+
+        <p class="text-body-12 task__bottom">Дизайн</p>
+      </div>
+      }
+    </div>
+
+    <div class="tasks__row progress">
+      <div class="tasks__title">
+        <div class="tasks__format">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example schedule icon"
+            fontIcon="schedule"
+          ></mat-icon>
+
+          <h4 class="text-body-18">В процессе</h4>
+        </div>
+
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example add icon"
+          fontIcon="add"
+        ></mat-icon>
+      </div>
+
+      @for(task of tasks(2); track $index) {
+      <div class="task">
+        <div class="task__top">
+          <img alt="avatar" />
+
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example menu icon"
+            fontIcon="menu"
+          ></mat-icon>
+
+          <!-- <mat-icon
+            aria-hidden="false"
+            aria-label="Example menu icon"
+            fontIcon="close"
+          ></mat-icon> -->
+        </div>
+
+        <p class="text-body-16">Название</p>
+        <p class="text-body-12 task__description">Описание</p>
+
+        <p class="text-body-12 task__bottom">Дизайн</p>
+      </div>
+      }
+    </div>
+
+    <div class="tasks__row done">
+      <div class="tasks__title">
+        <div class="tasks__format">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example check_circle icon"
+            fontIcon="check_circle"
+          ></mat-icon>
+
+          <h4 class="text-body-18">Сделано</h4>
+        </div>
+
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example add icon"
+          fontIcon="add"
+        ></mat-icon>
+      </div>
+
+      @for(task of tasks(2); track $index) {
+      <div class="task">
+        <div class="task__top">
+          <img alt="avatar" />
+
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example menu icon"
+            fontIcon="menu"
+          ></mat-icon>
+
+          <!-- <mat-icon
+            aria-hidden="false"
+            aria-label="Example menu icon"
+            fontIcon="close"
+          ></mat-icon> -->
+        </div>
+
+        <p class="text-body-16">Название</p>
+        <p class="text-body-12 task__description">Описание</p>
+
+        <p class="text-body-12 task__bottom">Дизайн</p>
+      </div>
+      }
+    </div>
+  </div>
+</div>

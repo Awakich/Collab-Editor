@@ -5,4 +5,6 @@ export interface Task {
   avatar: string;
   userId: number;
   workerId: number;
+  format: "todo" | "progress" | "done";
+  type: string;
 }
