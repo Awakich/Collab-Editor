@@ -17,5 +17,6 @@ export interface SkillDetail {
 interface Question {
   id: number;
   question: string;
-  answer: string;
+  answer: number;
+  options: string[];
 }
